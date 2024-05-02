@@ -1,0 +1,47 @@
+package  br.com.icaro.Autonomous
+// Classe VeiculoAutonomo
+
+public class VeiculoAutonomo {
+    // OS ATRIBUTOS
+    private String nome;
+    private double autonomia;
+    private int capacidadePassageiros;
+
+    // Construtor
+    public VeiculoAutonomo(String nome, double autonomia, int capacidadePassageiros) {
+        this.nome = nome;
+        this.autonomia = autonomia;
+        this.capacidadePassageiros = capacidadePassageiros;
+    }
+
+    // OS Métodos
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setAutonomia(double autonomia) {
+        this.autonomia = autonomia;
+    }
+
+    public double getAutonomia() {
+        return autonomia;
+    }
+
+    public void setCapacidadePassageiros(int capacidadePassageiros) {
+        this.capacidadePassageiros = capacidadePassageiros;
+    }
+
+    public int getCapacidadePassageiros() {
+        return capacidadePassageiros;
+    }
+
+    // Método a ser sobrescrito nas classes derivadas
+    public double calcularEconomia() {
+        // Implementação padrão para ser sobrescrita nas classes derivadas
+        return 0.0;
+    }
+}
