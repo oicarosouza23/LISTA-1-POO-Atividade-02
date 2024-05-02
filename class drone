@@ -1,0 +1,40 @@
+package  br.com.icaro.Autonomous
+
+// Classe Drone
+public class Drone extends VeiculoAutonomo {
+    // Atributos adicionais
+    private double alturaMaximaVoo;
+    private String tipoCamera;
+
+    // Construtor
+    public Drone(String nome, double autonomia, int capacidadePassageiros, double alturaMaximaVoo, String tipoCamera) {
+        super(nome, autonomia, capacidadePassageiros);
+        this.alturaMaximaVoo = alturaMaximaVoo;
+        this.tipoCamera = tipoCamera;
+    }
+
+    // Métodos adicionais
+    public void setAlturaMaximaVoo(double alturaMaximaVoo) {
+        this.alturaMaximaVoo = alturaMaximaVoo;
+    }
+
+    public double getAlturaMaximaVoo() {
+        return alturaMaximaVoo;
+    }
+
+    public void setTipoCamera(String tipoCamera) {
+        this.tipoCamera = tipoCamera;
+    }
+
+    public String getTipoCamera() {
+        return tipoCamera;
+    }
+
+    // Sobrescrita do método calcularEconomia()
+    @Override
+    public double calcularEconomia() {
+        // Implementação específica para Drone
+        // Cálculo da economia do drone
+        return 0.0;
+    }
+}
