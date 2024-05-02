@@ -1,0 +1,40 @@
+package  br.com.icaro.Autonomous
+
+// Classe CarroAutonomo
+public class CarroAutonomo extends VeiculoAutonomo {
+    // Atributos adicionais
+    private String modelo;
+    private String tipoCombustivel;
+
+    // Construtor
+    public CarroAutonomo(String nome, double autonomia, int capacidadePassageiros, String modelo, String tipoCombustivel) {
+        super(nome, autonomia, capacidadePassageiros);
+        this.modelo = modelo;
+        this.tipoCombustivel = tipoCombustivel;
+    }
+
+    // Métodos adicionais
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+
+    public String getModelo() {
+        return modelo;
+    }
+
+    public void setTipoCombustivel(String tipoCombustivel) {
+        this.tipoCombustivel = tipoCombustivel;
+    }
+
+    public String getTipoCombustivel() {
+        return tipoCombustivel;
+    }
+
+    // Sobrescrita método calcularEconomia()
+    @Override
+    public double calcularEconomia() {
+        // Implementação específica para CarroAutonomo
+        // Cálculo da economia do carro autônomo
+        return 0.0;
+    }
+}
